@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Odin Form</title>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="sidebar-title">
+                <img class="odin-logo" src="./odin-lined.png">
+                <h1>Odin</h1>
+            </div>
+        </div>
+        <div class="main">
+            <div class="text-body">
+                <p class="hero-text hero-text-p">This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.<br>Sign up <span class="italic">now</span> to get started.</p>
+                <span class="hero-text hero-text-s">You <span class="italic">know</span> you want to.</span>
+            </div>
+            <div class="form-wrapper">
+                <form action="" method="post">
+                    <span class="form-head">Let's do this!</span>
+                
+                    <div class="flex-input">
+                        <div class="input-container">
+                            <label for="first-name">FIRST NAME</label>
+                            <input type="text" id="first-name" name="user-first-name" pattern="^[a-zA-Z]+$">
+                        </div>
+                
+                        <div class="input-container">
+                            <label for="last-name">LAST NAME</label>
+                            <input type="text" id="last-name" name="user-last-name" pattern="^[a-zA-Z]+$">
+                        </div>
+                    </div>
+                    <div class="flex-input">
+                        <div class="input-container">
+                            <label for="email">EMAIL</label>
+                            <input type="text" id="email" name="user-email" required>
+                        </div>
+                        <div class="input-container">
+                            <label for="user-tel">PHONE NUMBER</label>
+                            <input type="tel" id="user-tel" name="user-tel" placeholder="10-digit number" pattern="^[0-9]{10}$" maxlength="10">
+                        </div>
+                    </div>
+                    <div class="flex-input">
+                        <div class="input-container">
+                            <label for="pwd-new">PASSWORD</label>
+                            <input type="password" id="pwd-new" name="pwd-new" min-length="8" required>
+                        </div>
+                        <div class="input-container">
+                            <label for="pwd-confirm">CONFIRM PASSWORD</label>
+                            <input type="password" id="pwd-confirm" name="pwd-confirm" required>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="bottom">
+                <button type="submit">Create Account</button>
+                <span class="login">Already have an account? <a href="">Log in</a></span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
